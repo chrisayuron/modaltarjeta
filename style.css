@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+
+.main-container{
+    background-color: #fe9393;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 120px;
+
+    
+}
+
+.card1{
+    background-color: #000;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    border-radius: 12px;
+    color: white;
+    padding: 60px 50px 60px 60px;
+    position: relative;
+}
+.cambio{
+    animation-name: cambio;
+    animation-duration: 1s;  
+}
+.title{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom:40px;
+}
+
+.card1 .title::after{
+    content: "";
+    background-color: purple;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 60px;
+    top: 110px;
+}
+
+.paragraph{
+    margin-bottom: 50px;
+    font-size: 0.85em;
+}
+
+.btn__enviar{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    /* border: solid 1px; */
+    border-radius: 8px;
+    padding: 10px 0 10px 0;
+    background-color: fuchsia;
+    /* transition: 1s; */
+    width: 225px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn__enviar:hover{
+    background-color: white;
+    color: fuchsia;
+    /* transition: 1s; */
+}
+
+.send-container{
+    background-color: #9f2160e2;
+    position: absolute;
+    height: 617px;
+    width: 100vw;
+    padding-top: 130px;
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.card2{
+    background-color: #77dd77;
+    color: #000;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 60px 50px 60px 60px;
+    position: relative;
+}
+.card2 .title::after{
+    content: "";
+    background-color: purple;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 60px;
+    top: 110px;
+}
+
+.card2 input{
+    /* height: 35px; */
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight:600;
+    padding:7px 0 7px 20px;
+}
+
+.send-container__button{
+    width: 500px;
+    margin: 5px auto 0;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid 1px blue; */
+    position: absolute;
+    top:350px;
+    right:0;
+}
+.send-container__button p{
+    /* border: solid 1px black; */
+    height: 40px;
+    display: block;
+    width: 240px;
+    margin: 0 15px 0 15px;
+    padding: 10px 0 10px 0px;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;  
+}
+
+.send-container__button .cancelar{
+    /* border: solid 1px black; */
+    background-color: #fff;
+    color: #000;
+    font-weight: 900;
+    cursor: pointer;
+}
+.send-container__button .cancelar:hover{
+    background-color: gray;
+    color: #fff;
+    /* transition: 1s; */
+}
+
+.send-container__button .continuar{
+    /* border: solid 1px black; */
+    background-color: fuchsia;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.send-container__button .continuar:hover{
+    background-color: white;
+    color: fuchsia;
+    /* transition: 1s; */
+}
+
+#error{
+    /* border: solid 1px red; */
+    text-align: center;
+    color: purple;
+    font-weight:600;
+    font-size: 0.7em;
+}
+
+
+.sended-container{
+    background-color: #77dd77; ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 190px;
+    display: none;
+}
+
+.card3{
+    background-color:#77dd77;
+    color:#000 ;
+    width: 700px;
+    height: 350px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 60px 50px 60px 60px;
+    position: relative;
+    text-align: center;
+}
+.card3 .title{
+    font-size: 40px;
+    font-weight: 900;
+}
+.card3 .nombre{
+    position: relative;
+    top:-40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.nombre::before{
+    content: "";
+    background-color: #fff;
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    left: 25px;
+    top:50px
+}
+
+@keyframes cambio{
+    from{top:-100px}
+    to{top:0px}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARJETA</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container" id="main-container">
+        <div class="card1">
+            <p class="title">TARJETA DE REGALO</p>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquam nam maiores, sint earum ad, in qui similique animi voluptatem esse perferendis consequuntur corrupti molestiae deleniti voluptates! Ex voluptatibus deleniti dolore praesentium doloribus?</p>
+            <p class="btn__enviar" id="btn__enviar">ENVIAR TARJETA</p>
+        </div>
+    </div>
+    <div class="send-container" id="send-container">
+        <div class="card2">
+            <p class="title">Deseas enviar la tarjeta?</p>
+            <p class="paragraph">Escribe el nombre de la persona a quien quieres enviar la tarjeta</p>
+            <input id="nombre" type="text" placeholder="Escribe un nombre">
+            <p id="error"></p>
+            <div class="send-container__button">
+                <p class="cancelar" id="btn__cancelar">CANCELAR</p>
+                <p class="continuar" id="btn__continuar">CONTINUAR</p>
+                
+                </div>
+        </div>
+        
+    </div>
+    <div class="sended-container" id="sended-container">
+        <div class="card3">
+            <p class="title">TARJETA ENVIADA A</p>
+            <p class="nombre"></p>
+            
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
